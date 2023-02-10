@@ -20,5 +20,5 @@
   "css.lint.zeroUnits": "error",
   "html.format.endWithNewline": true,
   "html.format.indentInnerHtml": true,
-  "liveServer.settings.port": 5501
+  "liveServer.settings.port": 5502
 }
