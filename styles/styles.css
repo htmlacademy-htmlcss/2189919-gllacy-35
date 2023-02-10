@@ -33,11 +33,43 @@
   width: 1px;
   height: 1px;
   margin: -1px;
-  border: 0;
   padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
+  border: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
-  color: black;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  margin: 0;
+  color: #2D3440;
+  font-family: "Inter", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  background-color: #FFFFFF;
+}
+
+.pink-theme {
+  background-color: #FEAFC3;
+}
+
+.blue-theme {
+  background-color: #69A9FF;
+}
+
+.yellow-theme {
+  background-color: #FCC850;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+  padding: 0 98px;
 }
