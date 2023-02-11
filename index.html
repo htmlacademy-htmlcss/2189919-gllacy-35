@@ -18,7 +18,9 @@
           </a>
           <ul class="navigation-menu">
             <li class="menu-item menu-item-dropdown">
-              <button class="menu-link" type="button">Каталог</button>
+              <button class="menu-link-catalog" type="button">Каталог
+                <span class="menu-link-dropdown"></span>
+              </button>
               <ul class="menu-sublist">
                 <li class="menu-sublist-item">
                   <a class="menu-sublist-link menu-sublist-link-new" href="#">Новинки</a>
@@ -38,7 +40,7 @@
                 </li>
               </ul>
             </li>
-            <li class="menu-item">
+            <li class="menu-item menu-item-pay">
               <a class="menu-link" href="#">Доставка и оплата</a>
             </li>
             <li class="menu-item">
@@ -80,9 +82,11 @@
                 <input class="dropdown-input" type="password" name="password" placeholder="Пароль">
               </label>
               <div class="dropdown-sign-in-elements">
-                <button class="button dropdown-sign-in-button" type="button">Войти</button>
-                <a class="dropdown-link" href="#">Забыли пароль?</a>
-                <a class="dropdown-link" href="#">Регистрация</a>
+                <button class="button button-red" type="button">Войти</button>
+                <div class="">
+                  <a class="dropdown-link" href="#">Забыли пароль?</a>
+                  <a class="dropdown-link" href="#">Регистрация</a>
+                </div>
               </div>
             </form>
           </div>
@@ -124,7 +128,7 @@
                 </li>
               </ul>
               <div class="dropdown-cart-elements">
-                <button class="button dropdown-cart-button" type="button">Оформить заказ</button>
+                <button class="button button-red" type="button">Оформить заказ</button>
                 <span class="dropdown-cart-total-price">Итого: 790 ₽</span>
               </div>
             </form>
