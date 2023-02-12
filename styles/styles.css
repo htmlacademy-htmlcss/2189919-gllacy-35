@@ -403,6 +403,10 @@ img {
   color: #FCFCFC;
 }
 
+.dropdown:focus-within .dropdown-img {
+  color: #E7E7E7;
+}
+
 .dropdown-img {
   margin-right: 7px;
 }
@@ -440,7 +444,7 @@ img {
 }
 
 .dropdown-form-sign-in {
-
+  display: none;
 }
 
 .dropdown-form-cart {
@@ -453,7 +457,7 @@ img {
   font-size: 24px;
   line-height: 30px;
   color: #2D3440;
-  margin: 0 0 35px;
+  margin: 0 0 32px;
 }
 
 .dropdown-input {
@@ -469,7 +473,6 @@ img {
 }
 
 .dropdown-input:focus {
-
   outline: 2px solid #2D3440;
 }
 
@@ -523,5 +526,115 @@ img {
 }
 
 .dropdown-link:last-child {
+  margin-bottom: 0;
+}
 
+.dropdown-form-cart {
+  min-width: 345px;
+}
+
+.dropdown-cart-list {
+  margin: 0;
+  padding: 0 0 32px;
+  border-bottom: 1px solid #E7E7E7;
+  list-style-type: none;
+  margin-bottom: 32px;
+}
+
+.dropdown-cart-item {
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.dropdown-cart-item:last-child {
+  margin-bottom: 0;
+}
+
+.dropdowm-cart-link {
+  display: grid;
+  grid-template-columns: 46px 106px 99px;
+  gap: 16px;
+  text-decoration: none;
+  margin-right: 42px;
+  position: relative;
+}
+
+.cart-description-name {
+  font-family: "Inter", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #2D3440;
+  margin: 0;
+  padding: 0;
+}
+
+.cart-description-quantity {
+  font-family: "Inter", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #B9B9B9;
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown-cart-price {
+  display: grid;
+  font-family: "Inter", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #2D3440;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart-description {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.dropdown-cart-total-price {
+  font-family: "Inter", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #2D3440;
+}
+
+.cart-button-delete {
+  width: 16px;
+  height: 16px;
+  border: 0;
+  background-image: url(../images/cart-button-delete.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: transparent;
+  margin-top: 14px;
+}
+
+.cart-button-delete:hover,
+.cart-button-delete:focus {
+  cursor: pointer;
+  border-radius: 4px;
+  color: #2D3440;
+  box-shadow: 0 0 0 2px #2D3440;
+}
+
+.cart-button-delete:focus {
+  opacity: 0.4;
+  outline: none;
+}
+
+.cart-button-delete:active {
+  opacity: 0.2;
+}
+
+.cart-button {
+  margin-right: 19px;
 }
