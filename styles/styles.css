@@ -49,7 +49,6 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
-  background-color: #FFFFFF;
 }
 
 img {
@@ -61,15 +60,15 @@ img {
   flex-grow: 1;
 }
 
-.pink-theme {
+.theme-pink {
   background-color: #FEAFC3;
 }
 
-.blue-theme {
+.theme-blue {
   background-color: #69A9FF;
 }
 
-.yellow-theme {
+.theme-yellow {
   background-color: #FCC850;
 }
 
@@ -677,6 +676,7 @@ img {
   height: auto;
   opacity: 1;
   margin: 0 15px 2px 0;
+  order: -1;
 }
 
 .slider-content {
@@ -697,19 +697,18 @@ img {
 }
 
 
-.pink-theme .slider-image-container {
+.theme-pink .slider-image-container {
   background-image: url(../images/circle-pink.svg);
   background-repeat: no-repeat;
   background-position: center center;
 }
 
-.blue-theme .slider-image-container {
+.theme-blue .slider-image-container {
   background-image: url(../images/circle-blue.svg);
   background-repeat: no-repeat;
   background-position: center center;
 }
-
-.yellow-theme .slider-image-container {
+.theme-yellow .slider-image-container {
   background-image: url(../images/circle-yellow.svg);
   background-repeat: no-repeat;
   background-position: center center;
@@ -835,15 +834,16 @@ img {
 }
 
 .slider-pagination-button:hover {
-  background-color: rgba(252, 252, 252, 0.3);
   border: 1px solid #FCFCFC;
+  background-color: rgba(252, 252, 252, 0.3);
+  opacity: 1;
 }
 
 .slider-pagination-button:focus {
   background-color: rgba(252, 252, 252, 0.3);
   border: 1px solid #2D3440;
   outline: none;
-  opacity: 1;
+  opacity: 0.5;
 }
 
 .slider-pagination-button:active {
