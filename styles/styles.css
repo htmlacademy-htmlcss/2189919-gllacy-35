@@ -117,31 +117,32 @@ img {
 
 .button-red {
   background-color: #FF2F64;
-  box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
   color: #FCFCFC;
+  box-shadow: 0 0 0 4px rgba(255, 47, 100, 0.3),
+              0 4px 12px rgba(45, 52, 64, 0.1);
 }
 
 .button-red:focus {
   color: #FCFCFC;
   background-color: #FF2F64;
+  outline: none;
 }
 
 .button-red:hover {
   color: #2D3440;
   background-color: rgba(252, 252, 252, 0.3);
-  border: 4px solid #FF2F64;
+  box-shadow: 0 0 0 4px #FF2F64;
 }
 
 .button-red:active {
   color:  #FCFCFC;
   background-color: #FEAFC3;
-  border: 2px solid #2D3440;
 }
 
 .button-red:disabled {
   color:  #565C66;
   background-color: #B9B9B9;
-  border:  4px solid rgba(185, 185, 185, 0.3);
+  box-shadow: 0 0 0 4px rgba(185, 185, 185, 0.3);
   pointer-events: none;
 }
 
