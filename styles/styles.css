@@ -1082,3 +1082,74 @@ img {
   border: 2px solid #B9B9B9;
   pointer-events: none;
 }
+
+.about-us {
+  background-color: #FF2F64;
+  background-image: url(../images/about-us-border-waffle.jpg);
+  padding: 24px;
+  border-radius: 16px;
+  margin-bottom: 80px;
+}
+
+.about-us-title {
+  font-family: "Inter", "Arial", sans-serif;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+  color: #2D3440;
+  grid-column: span 2;
+  margin: 0 auto 16px auto;
+  text-align: center;
+}
+
+.about-us-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px 32px;
+  padding: 56px 40px;
+  background-color: #FFFFFF;
+  border-radius: 16px;
+}
+
+
+.about-us-text {
+  font-family: "Inter", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #565C66;
+  margin: 0;
+  padding-left: 64px;
+  position: relative;
+
+}
+
+.about-us-text::before {
+  position: absolute;
+  content: "";
+  width: 48px;
+  height: 48px;
+  border: 2px solid #2D3440;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: block;
+  box-sizing: border-box;
+  background-size: 32px 32px;
+}
+
+
+.about-us-text-ice-cream::before {
+  background-image: url(../images/ice-cream.svg);
+}
+.about-us-text-cow::before {
+  background-image: url(../images/cow.svg);
+}
+.about-us-text-natural::before {
+  background-image: url(../images/natural.svg);
+}
+.about-us-text-temperature::before {
+  background-image: url(../images/temperature.svg);
+}
