@@ -1153,3 +1153,117 @@ img {
 .about-us-text-temperature::before {
   background-image: url(../images/temperature.svg);
 }
+
+.subscription-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-bottom: 80px;
+}
+
+.subscription-news {
+  padding: 32px 235px 32px 32px;
+  border-radius: 16px;
+  background-color: #FFFFFF;
+  background-image: url(../images/subscription-news.jpg);
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: cover;
+}
+
+.subscription-news-title {
+  font-family: "Inter", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #565C66;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 13px;
+}
+
+.subscription-news-text {
+  font-family: "Inter", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #2D3440;
+  margin: 0;
+}
+
+.subscription-form {
+  background-image: url(../images/subscription-form-background.jpg);
+  border-radius: 16px;
+  padding: 6px;
+}
+
+.subscription-form-container {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #FFFFFF;
+  gap: 19px;
+  padding: 26px 26px 28px;
+  border-radius: 16px;
+}
+
+.subscription-form-text {
+  font-family: "Inter", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #565C66;
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.subscription-form-input {
+  padding: 13px 16px 13px 16px;
+  border: 1px solid #B9B9B9;
+  border-radius: 4px;
+  font-family: "Inter", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: #B9B9B9;
+  background-color: #FFFFFF;
+  flex-grow: 1;
+}
+
+.subscription-form-input:focus {
+  outline: 2px solid #2D3440;
+}
+
+.subscription-form-input:hover {
+  color: #2D3440;
+  border: 1px solid #2D3440;
+}
+
+.subscription-form-input.is-error {
+  border: 1px solid #EA5454;
+}
+
+.subscription-form-input.is-error:hover {
+  border: 2px solid #EA5454;
+}
+
+.subscription-form-input:disabled {
+  color: #2D3440;
+  opacity: 0.65;
+  background-color: #E7E7E7;
+  border: 1px solid #B9B9B9;
+}
+
+.subscription-form-input:disabled:hover {
+  color: #2D3440;
+  background-color: #E7E7E7;
+  border: 1px solid #B9B9B9;
+}
+
+.subscription-form-input::placeholder {
+  color: #B9B9B9;
+}
+
+
+.subscription-form-button {
+  align-self: center;
+  margin-right: 4px;
+}
