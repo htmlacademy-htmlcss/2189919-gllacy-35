@@ -897,3 +897,65 @@ img {
   margin: -2px;
   color: #FCFCFC;
 }
+
+.gifts-title {
+  font-family: "Inter", "Arial", sans-serif;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+  color: #2D3440;
+  grid-column: span 2;
+  margin: 0 auto 24px auto;
+  max-width: 434px;
+  text-align: center;
+}
+
+.gifts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-bottom: 81px;
+}
+
+.gifts-item {
+  display: flex;
+  flex-direction: column;
+  padding: 36px 206px 36px 36px;
+  background-color: #FF7799;
+  border-radius: 16px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.gifts-item-title {
+  font-family: "Inter", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #2D3440;
+  margin: 0 0 28px 0;
+  padding: 0;
+}
+
+.gifts-item-description {
+  font-family: "Inter", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #2D3440;
+  margin: 0 0 28px 0;
+  padding: 0;
+}
+
+.gifts-item-image {
+  position: absolute;
+  display: block;
+  right: 0;
+  bottom: 0;
+}
+
+.gifts-button {
+  display: block;
+  max-width: max-content;
+}
