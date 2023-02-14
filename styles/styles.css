@@ -959,3 +959,126 @@ img {
   display: block;
   max-width: max-content;
 }
+
+.popular {
+  margin-bottom: 80px;
+}
+
+.popular-title {
+  font-family: "Inter", "Arial", sans-serif;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+  color: #2D3440;
+  margin: 0 auto 106px auto;
+  max-width: 50%;
+  text-align: center;
+}
+
+.poplular-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.popular-item {
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  background-color: #FCFCFC;
+  padding: 24px 40px;
+  align-items: center;
+}
+
+.popular-item-image {
+  order: -1;
+  display: block;
+  width: 168px;
+  height: 168px;
+  box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
+  border-radius: 50%;
+  margin-bottom: 16px;
+  margin-top: -74px;
+}
+
+.popular-item-title {
+  font-family: "Inter", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #2D3440;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 8px;
+}
+
+.popular-item-description {
+  font-family: "Inter", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #565C66;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.popular-container {
+  display: flex;
+  justify-content: space-between;
+  align-self: stretch;
+  align-items: center;
+}
+
+.popular-price {
+  font-family: "Inter", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #2D3440;
+  margin: 0;
+  padding: 0;
+}
+
+.popular-button {
+  display: flex;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border-radius: 50%;
+  background-color: #FF2F64;
+  border: 2px solid #FF2F64;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #FCFCFC;
+}
+
+.popular-button:hover {
+  background-color: rgba(252, 252, 252, 0.3);
+  color: #2D3440;
+}
+
+.popular-button:focus {
+  background-color: #FF2F64;
+  color: #FCFCFC;
+  border: 2px solid #2D3440;
+  outline: none;
+}
+
+.popular-button:active {
+  background-color: #FFCBD8;
+  color: #2D3440;
+  border: 2px solid #FF2F64;
+}
+
+.popular-button:disabled {
+  background-color: #B9B9B9;
+  color: #565C66;
+  border: 2px solid #B9B9B9;
+  pointer-events: none;
+}
