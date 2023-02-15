@@ -1309,7 +1309,7 @@ img {
   display: grid;
   grid-template-columns: 117px 1fr 117px;
   gap: 18px 16px;
-  background-color: #FFFFFF;
+  background-color: #FCFCFC;
   border-radius: 8px;
   padding: 40px 40px 42px;
   box-shadow: 0 15px 40px rgba(45, 52, 64, 0.12);
@@ -1463,4 +1463,63 @@ img {
   grid-column: span 3;
   justify-self: center;
   margin-top: 14px;
+}
+
+.contacts {
+  padding: 64px;
+  border-radius: 16px;
+  background-color: #FFFFFF;
+  background-image: url(../images/contacts-background.jpg);
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: cover;
+}
+
+.contacts-container {
+  padding: 41px 40px 42px;
+  background-color: #FCFCFC;
+  box-shadow: 0 8px 16px rgba(45, 52, 64, 0.12);
+  border-radius: 8px;
+  max-width: 263px;
+}
+
+.contacts-text {
+  font-family: "Inter", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #565C66;
+  margin: 0;
+  margin-bottom: 12px;
+}
+
+.contacts-text-adress {
+  font-family: "Inter", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #2D3440;
+  margin: 0;
+  margin-bottom: 24px;
+}
+
+.contacts-text-phone {
+  display: block;
+  font-family: "Inter", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #2D3440;
+  text-decoration: none;
+  margin: 0;
+  margin-bottom: -1px;
+}
+
+.contacts-text-time {
+  font-size: 14px;
+  margin: 0;
+}
+
+.contacts-button {
+  margin-top: 31px;
 }
