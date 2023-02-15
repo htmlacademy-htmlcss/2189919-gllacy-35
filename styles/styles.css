@@ -866,7 +866,7 @@ img {
   min-width: 104px;
 }
 
-.slider-social-link {
+.social-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -878,18 +878,18 @@ img {
   color:  inherit;
 }
 
-.slider-social-link:focus {
+.social-link:focus {
   border-color: #2D3440;
   background-color: #2D3440;
   outline: none;
 }
 
-.slider-social-link:hover {
+.social-link:hover {
   border: 2px solid rgba(252, 252, 252, 0.5);
   background-color: #2D3440;
 }
 
-.slider-social-icon {
+.social-icon {
   display: block;
   width: 24px;
   height: 24px;
@@ -1330,9 +1330,7 @@ img {
   margin-bottom: 11px;
 }
 
-.delivery-label {
 
-}
 .delivery-tooltip {
   position: relative;
   padding-right: 18px;
@@ -1522,4 +1520,94 @@ img {
 
 .contacts-button {
   margin-top: 31px;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 48px 14px 48px 4px;
+  align-items: start;
+  box-sizing: border-box;
+}
+
+
+.footer-socials {
+  display: grid;
+  grid-template-columns: repeat(3, 24px);
+  gap: 16px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  min-width: 104px;
+}
+
+
+.footer-info {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 8px 15px;
+  max-width: 360px;
+  padding-left: 34px;
+  background-image: url("../images/footer-heart.svg");
+  background-repeat: no-repeat;
+  background-position: top 2px left 11px;
+  margin-left: 9px;
+}
+
+.footer-info-title {
+  font-family: "Inter", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2D3440;
+  margin: 0;
+}
+
+
+.footer-link {
+  font-family: "Inter", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2D3440;
+  text-decoration: none;
+  margin: 0;
+}
+
+.footer-copyrights {
+  justify-self: end;
+  padding-top: 34px;
+  background-image: url("../images/logo-html-academy.svg");
+  background-repeat: no-repeat;
+  background-position: top 0 left 4px;
+}
+
+
+.footer-copyrights-text {
+  font-family: "Inter", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #2D3440;
+}
+
+.footer-copyrights-link {
+  font-family: "Inter", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #2D3440;
+  margin: 0;
+  padding: 0;
+  text-underline-offset: 3px;
+}
+
+.footer-copyrights-year {
+  font-family: "Inter", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #2D3440;
+  margin: 0;
+  padding: 0;
 }
