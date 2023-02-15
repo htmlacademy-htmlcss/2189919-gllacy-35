@@ -300,6 +300,40 @@
             </div>
           </form>
         </div>
+        <section class="delivery">
+          <div class="delivery-content">
+            <h2 class="delivery-title">Доставка любимого мороженого на дом</h2>
+            <p class="delivery-text">Хочется полакомиться любимым десертом,<br>но нет времени съездить в магазин? Закажите доставку мороженого на дом, и курьер<br>привезёт вам ваш заказ в течение часа!</p>
+          </div>
+          <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
+            <p class="delivery-form-text">Укажите адрес и дату доставки, и мы свяжемся<br>с вами, чтобы подтвердить заказ.</p>
+            <label class="delivery-label">
+              <span class="delivery-tooltip">
+                <span class="delivery-label-name">Дата</span>
+                <span class="delivery-tooltip-button">
+                  <span class="visually-hidden">Узнать больше.</span>
+                </span>
+                <span class="delivery-tooltip-description">Введите дату рождения</span>
+              </span>
+              <input class="delivery-input" type="text" name="date" placeholder="01.04.2020">
+            </label>
+            <label class="delivery-label delivery-label-phone">
+              <span class="delivery-label-name">Телефон</span>
+              <input class="delivery-input" type="tel" name="phone" placeholder="+7 800 999-00-00">
+            </label>
+            <label class="delivery-label delivery-label-address">
+              <span class="delivery-tooltip">
+                <span class="delivery-label-name">Адрес</span>
+                <span class="delivery-tooltip-button">
+                  <span class="visually-hidden">Узнать больше.</span>
+                </span>
+                <span class="delivery-tooltip-description">Введите название улицы, дома и квартиры</span>
+              </span>
+              <input class="delivery-input" type="text" name="address" placeholder="ул. Большая Конюшенная, 19/8">
+            </label>
+            <button class="button button-red delivery-button" type="submit">Отправить</button>
+          </form>
+        </section>
       </main>
   </body>
   <script src="js/index.js"></script>
