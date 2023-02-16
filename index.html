@@ -107,7 +107,7 @@
                     </div>
                     <p class="dropdown-cart-price">310 ₽</p>
                   </a>
-                  <button class="cart-button-delete" type="button">
+                  <button class="button-close" type="button">
                     <span class="visually-hidden">Удалить.</span>
                   </button>
                 </li>
@@ -120,7 +120,7 @@
                     </div>
                     <p class="dropdown-cart-price">480 ₽</p>
                   </a>
-                  <button class="cart-button-delete" type="button">
+                  <button class="button-close" type="button">
                     <span class="visually-hidden">Удалить.</span>
                   </button>
                 </li>
@@ -342,7 +342,7 @@
             <p class="contacts-text">Для заказов по телефону:</p>
             <a class="contacts-text contacts-text-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
             <p class="contacts-text contacts-text-time">(с 10 до 20 ежедневно)</p>
-            <button class="button button-red contacts-button">Форма обратной связи</button>
+            <button class="button button-red contacts-button modal-button-open-js" type="button" data-modal="feedback">Форма обратной связи</button>
           </div>
         </section>
       </main>
@@ -379,6 +379,29 @@
           <span class="footer-copyrights-year">&copy; 2021</span>
         </div>
       </footer>
+      <div class="modal-container">
+        <div class="modal">
+          <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
+            <h2 class="modal-title">Мы обязательно ответим вам!</h2>
+            <label class="modal-label">
+              <span class="visually-hidden">Введите имя и фамилию.</span>
+              <input class="modal-input" type="text" name="name" placeholder="Имя и фамилия">
+            </label>
+            <label class="modal-label">
+              <span class="visually-hidden">Введите эмэйл.</span>
+              <input class="modal-input" type="email" name="email" placeholder="email@example.com">
+            </label>
+            <label class="modal-label">
+              <span class="visually-hidden">Введите текст сообщения.</span>
+              <textarea class="modal-textarea" name="message" cols="5" rows="5" placeholder="В свободной форме"></textarea>
+            </label>
+            <button class="modal-button button button-red" type="submit">Отправить</button>
+            <button class="modal-button-close button-close modal-button-close-js" type="button">
+              <span class="visually-hidden">Закрыть окно.</span>
+            </button>
+          </form>
+        </div>
+      </div>
   </body>
   <script src="js/index.js"></script>
   </html>

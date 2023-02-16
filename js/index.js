@@ -40,3 +40,25 @@ buttonNext.addEventListener('click', (e) => {
 });
 
 bullets.forEach((element, index) => element.addEventListener('click', () => onSlideChange(index)));
+
+
+const modalOpenBtn = document.querySelector('.modal-button-open-js');
+const modal = document.querySelector('.modal-container');
+const modalCloseBtn = document.querySelector('.modal-button-close-js');
+
+modalOpenBtn.addEventListener('click', (evt) => {
+  evt.preventDefault();
+modal.classList.add('is-open');
+});
+
+modalCloseBtn.addEventListener('click', (evt) => {
+  evt.preventDefault();
+  modal.classList.remove('is-open');
+  });
+
+document.addEventListener('keydown', (evt) => {
+  if (evt.key === 'Escape') {
+    evt.preventDefault();
+    modal.classList.remove('is-open');
+  }
+});
