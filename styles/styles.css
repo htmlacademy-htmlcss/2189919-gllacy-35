@@ -2059,3 +2059,120 @@ img {
   opacity: 0.4;
   pointer-events: none;
 }
+
+.catalog-footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: start;
+  padding: 57px 0 80px;
+  border-bottom: 1px solid rgba(252, 252, 252, 0.3);
+}
+
+.catalog-footer::before {
+  content: "";
+}
+
+.catalog-footer-pagination {
+  display: flex;
+  font-family: "Inter", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #2D3440;
+  justify-self: end;
+  margin-top: 3px;
+  margin-right: -13px;
+}
+
+.pagination-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination-item.current .pagination-link {
+  background-color: #FCFCFC;
+}
+
+.pagination-link {
+  display: block;
+  box-sizing: border-box;
+  text-decoration: none;
+  width: 24px;
+  height: 24px;
+  padding: 1px;
+  border: 1px solid transparent;
+  border-radius: 50px;
+  color: inherit;
+  text-align: center;
+  background-color: transparent;
+}
+
+
+.pagination-button {
+  box-sizing: border-box;
+  display: flex;
+  width: 38px;
+  height: 38px;
+  padding: 0;
+  border: 2px solid transparent;
+  border-radius: 50px;
+  background-image: url(../images/arrow-black.svg);
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.pagination-button-prev {
+  transform: rotate(180deg);
+}
+
+.pagination-button:focus {
+  background-color: rgba(252, 252, 252, 0.3);
+  border-color: #2D3440;
+  outline: none;
+}
+
+.pagination-button:hover {
+  background-color: rgba(252, 252, 252, 0.3);
+  border-color: #FCFCFC;
+  cursor: pointer;
+  background-image: url(../images/arrow-white.svg);
+}
+
+.pagination-button:active {
+  background-color: #FCFCFC;
+  border-color: #FCFCFC;
+  background-image: url(../images/arrow-black.svg);
+}
+
+.pagination-button:disabled {
+  opacity: 0.4;
+  pointer-events: none;
+  outline: none;
+}
+
+.pagination-link:hover {
+  border-color: transparent;
+  background-color: rgba(252, 252, 252, 0.5);
+  cursor: pointer;
+}
+
+.pagination-link:focus {
+  border-color: #2D3440;
+  background-color: rgba(252, 252, 252, 0.5);
+  outline: none;
+}
+
+.pagination-link:active {
+  border-color: #FCFCFC;
+}
+
+.catalog-footer-button {
+  margin-right: 15px;
+}
