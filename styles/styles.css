@@ -1795,5 +1795,267 @@ img {
   font-size: 32px;
   line-height: 46px;
   color: #2D3440;
+  margin: 0;
   margin-bottom: 38px;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px 25px;
+  font-family: "Inter", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2D3440;
+  margin-bottom: 45px;
+}
+
+.range-input {
+  display: none;
+}
+
+.filters-fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.filters-legend {
+  margin: 0 0 9px 16px;
+  padding: 0;
+}
+
+.filters-select {
+  display: block;
+  box-sizing: border-box;
+  padding: 8px 57px 8px 16px;
+  border: 0;
+  border-radius: 20px;
+  background-color: rgba(252, 252, 252, 0.3);
+  background-image: url(../images/arrow.svg);
+  background-repeat: no-repeat;
+  background-position: center right 13px;
+  appearance: none;
+  font: inherit;
+}
+
+.filters-select:hover {
+  background-color: rgba(252, 252, 252, 0.5);
+  cursor: pointer;
+}
+
+.filters-select:focus {
+  background-color: rgba(252, 252, 252, 0.4);
+  box-shadow: 0 0 0 2px #FCFCFC;
+  outline: none;
+}
+
+.filters-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 17px;
+  padding: 8px 15px;
+  background-color: rgba(252, 252, 252, 0.3);
+  border-radius: 20px;
+  align-items: center;
+  font: inherit;
+}
+
+.filters-group-fat {
+  padding: 7px 23px;
+}
+
+.filters-group-filler {
+  padding: 9px 25px;
+}
+
+.filters-line {
+  width: 164px;
+  height: 2px;
+  margin: 9px 0;
+  background-color: rgba(86, 92, 102, 0.3);
+  border-radius: 1px;
+}
+
+.filters-interval {
+  position: relative;
+  height: 100%;
+  background-color: rgba(86, 92, 102, 1);
+  left: 24px;
+  width: 88px;
+}
+
+.range-button {
+  position: absolute;
+  box-sizing: border-box;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 6px solid #2D3440;
+  background-color: #FCFCFC;
+  padding: 0;
+  top: -7px;
+}
+
+.range-button:last-child {
+  left: 73px;
+}
+
+.range-button:hover {
+  border: 6px solid #FCFCFC;
+  background-color: #2D3440;
+  cursor: pointer;
+}
+
+.range-button:focus {
+  background-color: #2D3440;
+  box-shadow: 0 0 0 2px #2D3440;
+  border-color: #FCFCFC;
+  outline: none;
+}
+
+.range-button:active {
+  background-color: #2D3440;
+  border-color: #2D3440;
+  box-shadow: none;
+}
+
+.filters-radio,
+.filters-checkbox {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 24px;
+  cursor: pointer;
+}
+
+.control-radio {
+  box-sizing: border-box;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid #000000;
+  left: 0;
+}
+
+
+.input-radio:checked + .control-radio::before {
+  position: absolute;
+  content: "";
+  width: 6px;
+  height: 6px;
+  background-color: #000000;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.input-radio:hover + .control-radio {
+  border: 1px solid #FCFCFC;
+  cursor: pointer;
+}
+
+.input-radio:hover + .control-radio::before {
+  background-color: #FCFCFC;
+}
+
+.input-radio:checked:focus + .control-radio {
+  border: 1px solid #FCFCFC;
+  outline: none;
+}
+
+.input-radio:checked:focus + .control-radio::before {
+  background-color: #FCFCFC;
+  outline: none;
+}
+
+.input-radio:active + .control-radio {
+  opacity: 0.6;
+}
+
+.input-radio:active + .control-radio::before {
+  opacity: 0.6;
+}
+
+.input-radio:disabled + .control-radio {
+  opacity: 0.4;
+}
+
+.input-radio:disabled + .control-radio::before {
+  opacity: 0.4;
+}
+
+.control-check {
+  box-sizing: border-box;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-image: url(../images/check-off.svg);
+  background-color: transparent;
+  left: 0;
+}
+
+.input-checkbox:checked + .control-check {
+  background-image: url(../images/check-on.svg);
+}
+
+.input-checkbox:hover + .control-check,
+.input-checkbox:focus + .control-check {
+  background-image: url(../images/check-off-hover.svg);
+}
+
+.input-checkbox:checked:hover + .control-check,
+.input-checkbox:checked:focus + .control-check {
+  background-image: url(../images/check-on-hover.svg);
+}
+
+.input-checkbox:active + .control-check {
+  opacity: 0.6;
+}
+
+.input-checkbox:disabled + .control-check {
+  opacity: 0.4;
+}
+
+.filters-button {
+  font-family: "Inter", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2D3440;
+  padding: 8px 32px;
+  background: rgba(252, 252, 252, 0.3);
+  border-radius: 20px;
+  border: 2px solid #FCFCFC;
+  min-width: 189px;
+  margin-top: 27px;
+  margin-left: -11px;
+}
+
+.filters-button:hover {
+  border-color: rgba(252, 252, 252, 0.3);
+  background-color: #FCFCFC;
+  background-clip: padding-box;
+  cursor: pointer;
+}
+
+.filters-button:focus {
+  border-color:  #2D3440;
+  outline: none;
+}
+
+.filters-button:active {
+  border-color:  transparent;
+  background-color: rgba(252, 252, 252, 0.5);
+}
+
+.filters-button:disabled {
+  border-color: #FCFCFC;
+  opacity: 0.4;
+  pointer-events: none;
 }
