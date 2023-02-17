@@ -993,16 +993,16 @@ img {
   text-align: center;
 }
 
-.poplular-list {
+.products-list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
+  gap: 90px 30px;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.popular-item {
+.products-item {
   display: flex;
   flex-direction: column;
   border-radius: 8px;
@@ -1011,7 +1011,7 @@ img {
   align-items: center;
 }
 
-.popular-item-image {
+.products-item-image {
   order: -1;
   display: block;
   width: 168px;
@@ -1022,7 +1022,7 @@ img {
   margin-top: -74px;
 }
 
-.popular-item-title {
+.products-item-title {
   font-family: "Inter", "Arial", sans-serif;
   font-weight: 700;
   font-size: 20px;
@@ -1033,7 +1033,7 @@ img {
   margin-bottom: 8px;
 }
 
-.popular-item-description {
+.products-item-description {
   font-family: "Inter", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -1045,14 +1045,14 @@ img {
   text-align: center;
 }
 
-.popular-container {
+.products-container {
   display: flex;
   justify-content: space-between;
   align-self: stretch;
   align-items: center;
 }
 
-.popular-price {
+.products-price {
   font-family: "Inter", "Arial", sans-serif;
   font-weight: 700;
   font-size: 20px;
@@ -1062,7 +1062,7 @@ img {
   padding: 0;
 }
 
-.popular-button {
+.products-button {
   display: flex;
   width: 32px;
   height: 32px;
@@ -1076,25 +1076,25 @@ img {
   color: #FCFCFC;
 }
 
-.popular-button:hover {
+.products-button:hover {
   background-color: rgba(252, 252, 252, 0.3);
   color: #2D3440;
 }
 
-.popular-button:focus {
+.products-button:focus {
   background-color: #FF2F64;
   color: #FCFCFC;
   border: 2px solid #2D3440;
   outline: none;
 }
 
-.popular-button:active {
+.products-button:active {
   background-color: #FFCBD8;
   color: #2D3440;
   border: 2px solid #FF2F64;
 }
 
-.popular-button:disabled {
+.products-button:disabled {
   background-color: #B9B9B9;
   color: #565C66;
   border: 2px solid #B9B9B9;
@@ -1809,7 +1809,7 @@ img {
   font-size: 14px;
   line-height: 20px;
   color: #2D3440;
-  margin-bottom: 45px;
+  margin-bottom: 95px;
 }
 
 .range-input {
