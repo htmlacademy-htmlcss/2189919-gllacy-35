@@ -675,7 +675,7 @@ img {
 .slider-list {
   display: flex;
   align-items: flex-start;
-  gap: 41px;
+  gap: 43px;
   padding-top: 22px;
   overflow-x: hidden;
   position: relative;
@@ -697,15 +697,15 @@ img {
   width: 870px;
   height: auto;
   opacity: 1;
-  margin: 0 15px 2px 0;
+  margin: 0 15px 0 0;
   order: -1;
 }
 
 .slider-content {
   display: none;
   width: 440px;
-  margin-right: 50px;
-  padding-top: 115px;
+  margin-right: 54px;
+  padding-top: 113px;
   padding-left: 70px;
 }
 
@@ -766,7 +766,7 @@ img {
   color: #2D3440;
   margin: 0;
   padding: 0;
-  margin-bottom: 23px;
+  margin-bottom: 25px;
 }
 
 .slider-description {
@@ -933,7 +933,7 @@ img {
   line-height: 46px;
   color: #2D3440;
   grid-column: span 2;
-  margin: 0 auto 24px auto;
+  margin: 1px auto 25px auto;
   max-width: 434px;
   text-align: center;
 }
@@ -1778,7 +1778,7 @@ img {
 }
 
 .breadcrumbs-item:not(:last-child) {
-  padding-right: 29px;
+  padding-right: 28px;
   background-image: url(../images/arrow-breadcrumbs.svg);
   background-repeat: no-repeat;
   background-position: center right 9px;
@@ -1809,7 +1809,7 @@ img {
 .filters {
   display: flex;
   flex-wrap: wrap;
-  gap: 16px 25px;
+  gap: 16px 24px;
   font-family: "Inter", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -1830,7 +1830,7 @@ img {
 }
 
 .filters-legend {
-  margin: 0 0 9px 16px;
+  margin: 0 0 8px 16px;
   padding: 0;
 }
 
@@ -1843,7 +1843,7 @@ img {
   background-color: rgba(252, 252, 252, 0.3);
   background-image: url(../images/arrow.svg);
   background-repeat: no-repeat;
-  background-position: center right 13px;
+  background-position: top 16px right 15px;
   appearance: none;
   font: inherit;
 }
@@ -1863,7 +1863,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 17px;
-  padding: 8px 15px;
+  padding: 8px 16px;
   background-color: rgba(252, 252, 252, 0.3);
   border-radius: 20px;
   align-items: center;
@@ -1871,11 +1871,11 @@ img {
 }
 
 .filters-group-fat {
-  padding: 7px 23px;
+  padding: 8px 24px;
 }
 
 .filters-group-filler {
-  padding: 9px 25px;
+  padding: 10px 24px;
 }
 
 .filters-line {
@@ -2040,8 +2040,8 @@ img {
   border-radius: 20px;
   border: 2px solid #FCFCFC;
   min-width: 189px;
-  margin-top: 27px;
-  margin-left: -11px;
+  margin-top: 28px;
+  margin-left: -8px;
 }
 
 .filters-button:hover {
